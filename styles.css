@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --link: cyan;
+  --link2: blue;
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link: blue;
+  --link2: cyan;
+}
+
+html {
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: 'Inter';
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  overflow-wrap: break-word;
+  align-items: center;
+  background-color: var(--bg-color);;
+  color: var(--text-color);
+  text-align: center;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+button,
+button:active {
+  font-size: larger;
+  font-weight: bolder;
+  max-width: 80vw;
+  text-decoration: none;
+  color: var(--link);
+}
+
+a.secondarylinks {
+  color: var(--text-color);
+  font-size: large;
+  text-decoration: underline;
+}
+
+a:hover,
+button:hover {
+  color: var(--link2);
+  text-decoration: underline;
+}
+
+.navitems {
+  border: 0.2rem solid var(--text-color);
+  background-color: var(--bg-color);
+  padding: 1rem;
+  font-family: 'Inter';
+}
+
+h1 {
+  max-width: 80vw;
+  color: var(--link);
+}
+
+h2 {
+  max-width: 80vw;
+}
+
+p {
+  max-width: 80vw;
+  font-size: larger;
+}
+
+ol {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 80vw;
+  font-size: larger;
+  justify-content: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.main, .main2, .mainin, .main2in {
+  display: flex;
+  place-content: center;
+  margin: 1.5rem 1rem 2rem 1rem;
+  gap: 1.5rem;
+  max-width: 90vw;
+  place-items: center;
+  flex-wrap: wrap;
+}
+
+.main, .mainin {
+  flex-direction: column;
+}
+
+.mainin, .main2in {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  row-gap: 1rem;
+  max-width: 80vw;
+}
+
+footer {
+  font-weight: bolder;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  margin-top: auto;
+  max-width: 80vw;
+  justify-content: flex-end;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  color: var(--link);
+}
+
+.smallpic {
+  width: 10rem;
+  height: 10rem;
+  max-width: 80vw;
+  border-radius: 50%;
+}
+
+.images {
+  max-width: 80vw;
+  object-fit: scale-down;
+}
